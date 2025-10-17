@@ -1,15 +1,23 @@
-# Weather Dashboard
+## Round 2 Update
 
-This is a simple weather dashboard that fetches the current weather for any city using the Open-Meteo API.
+Upgrade the dashboard: support multiple cities with #city-tabs, show a 5-day temperature chart (#weather-chart) using Chart.js, add a theme toggle (#theme-toggle) persisting in localStorage, and a loading spinner (#loading-spinner). Use Intl.DateTimeFormat for dates and ensure mobile responsiveness with a viewport meta tag.
 
-## Features
-- Displays current temperature, humidity, and wind speed.
+Below is the revised implementation of a weather forecast dashboard that includes the requested features. This implementation consists of the main `index.html`, supporting CSS and JS files, and a `README.md` explaining the changes.
 
-## Technologies Used
-- HTML
-- CSS (Tailwind CSS)
-- JavaScript
+### Directory Structure
+```
+/weather-forecast
+  ├── index.html
+  ├── styles.css
+  ├── script.js
+  └── README.md
+```
 
-## Instructions
-1. Enter a city name in the input field.
-2. Click on the Fetch Weather button to see the weather data.
+### 1. `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
